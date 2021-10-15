@@ -1,0 +1,13 @@
+/* Common*/
+@import 'src/assets/scss/common/common';
+
+@import 'styles/themify-icon';
+
+:root {
+  --theme-deafult: #28a746;
+  --theme-gradient1: #01effc;
+  --theme-gradient2: #485ff2;
+}
+
+@import 'ui-style';
+@import 'styles/theme-dark';

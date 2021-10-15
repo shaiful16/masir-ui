@@ -1,0 +1,159 @@
+
+/*=====================
+    19.Color CSS start
+    ==========================*/
+
+.color1 {
+  background: #ff4c3b;
+}
+
+.color2 {
+  background: #3fdda7;
+}
+
+.color3 {
+  background: #f0b54d;
+}
+
+.color4 {
+  background: #e4604a;
+}
+
+.color5 {
+  background: #d4b196;
+}
+
+.color6 {
+  background: #866e6c;
+}
+
+.color7 {
+  background: #cc2121;
+}
+
+.color8 {
+  background: #dc457e;
+}
+
+.color9 {
+  background: #6d7e87;
+}
+
+.color10 {
+  background: #fa869b;
+}
+
+.color11 {
+  background: #81ba00;
+}
+
+.color12 {
+  background: #fe816d;
+}
+
+.color-picker {
+  position: fixed;
+  right: -190px;
+  top: 35%;
+  width: 190px;
+  z-index: 1;
+  transition: all .3s ease;
+  .settings-header {
+    background: #f3f3f3;
+    padding: 5px 15px;
+    box-shadow: 0px -10px 20px -5px rgba(220, 220, 220, 0.62);
+    h3 {
+      color: black;
+      margin: 0;
+      font-size: 20px;
+      padding: 4px 9px;
+    }
+  }
+  .section {
+    background: white;
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+    overflow: auto;
+    i {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+  a {
+    &.handle {
+      position: absolute;
+      right: 190px;
+      width: 42px;
+      height: 41px;
+      color: $black;
+      transition: all ease-in 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      z-index: -1;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      text-decoration: none;
+      background: #ffffff;
+      top: -80px;
+      border: 1px solid white;
+      box-shadow: 0 0 4px rgba(4, 4, 4, 0.10);
+      i {
+        margin-left: 5px;
+      }
+      &:hover {
+        color: var(--theme-deafult);
+      }
+    }
+  }
+  .colors {
+    a {
+      width: 32px;
+      height: 32px;
+      margin: 5px;
+      float: left;
+      transition: all ease-in 0.3s;
+    }
+  }
+  .skin {
+    a {
+      display: block;
+      width: 70px;
+      height: 30px;
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 5px;
+      float: left;
+      text-align: center;
+      line-height: 30px;
+      border: 2px transparent solid;
+      &.actt {
+        border: 2px white solid;
+      }
+    }
+  }
+}
+
+.handle {
+  i {
+    animation: ring-rotate 3s infinite linear;
+  }
+  &:hover {
+    background-color: white;
+  }
+}
+
+@keyframes ring-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sec-position {
+  position: relative;
+  top: -80px;
+}

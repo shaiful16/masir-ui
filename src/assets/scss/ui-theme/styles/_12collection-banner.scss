@@ -1,0 +1,119 @@
+
+/*=====================
+    12.Collection Banner CSS start
+    ==========================*/
+
+.collection-banner {
+  position: relative;
+  overflow: hidden;
+  img {
+    transition: all 0.5s ease;
+    width: 100%;
+  }
+  &.p-left {
+    .contain-banner {
+      justify-content: flex-start;
+    }
+  }
+  &.p-right {
+    .contain-banner {
+      justify-content: flex-end;
+    }
+  }
+  &.p-center {
+    .contain-banner {
+      justify-content: center;
+    }
+  }
+  .contain-banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    &.banner-3 {
+      padding-left: 50px;
+      padding-right: 50px;
+      h2 {
+        font-size: 36px;
+        letter-spacing: 0.05em;
+        color: white;
+        margin-top: 5px;
+        margin-bottom: -7px;
+      }
+      h4 {
+        color: $white;
+      }
+    }
+    &.banner-4 {
+      padding-left: 50px;
+      padding-right: 50px;
+      h2 {
+        font-size: 28px;
+        letter-spacing: 0.03em;
+        color: white;
+        margin-bottom: -7px;
+      }
+    }
+    h4 {
+      color: var(--theme-deafult);
+      font-weight: 700;
+
+      letter-spacing: 0.1em;
+      margin-bottom: 0;
+      margin-top: -3px;
+    }
+    h2 {
+      font-size: 60px;
+      font-weight: 700;
+      color: $dark-font;
+      letter-spacing: 0.1em;
+      margin-bottom: -7px;
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.banner-furniture {
+  padding-left: 15px;
+  padding-right: 15px;
+  .collection-banner {
+    .contain-banner {
+      &.banner-3 {
+        h2 {
+          color: $dark-font;
+          margin-bottom: 0;
+        }
+        h4 {
+          color: var(--theme-deafult);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.banner-goggles {
+  .collection-banner {
+    .contain-banner {
+      &.banner-3 {
+        h2 {
+          color: $dark-font;
+        }
+        h4 {
+          color: var(--theme-deafult);
+        }
+      }
+    }
+  }
+}

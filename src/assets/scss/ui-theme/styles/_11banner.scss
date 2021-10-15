@@ -1,0 +1,106 @@
+
+
+/*=====================
+    11.Banner CSS start
+    ==========================*/
+
+.full-banner {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 190px;
+  padding-bottom: 190px;
+  background-position: center;
+  &.parallax-layout {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    .banner-contain {
+      h4 {
+        color: $grey-shade;
+      }
+    }
+  }
+  &.banner-layout-3 {
+    .banner-contain {
+      h4 {
+        color: $white;
+      }
+      h3 {
+        color: $white;
+        margin-top: 10px;
+      }
+      .color {
+        color: var(--theme-deafult);
+        line-height: 1;
+        margin-top: -13px;
+      }
+    }
+  }
+  &.parallax {
+    background-attachment: fixed;
+  }
+  &.p-left {
+    .banner-contain {
+      float: left;
+    }
+  }
+  &.p-right {
+    .banner-contain {
+      float: right;
+    }
+  }
+  &.p-center {
+    .banner-contain {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  .banner-contain {
+    .btn-solid,
+    .btn-outline {
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 100px;
+      font-weight: 700;
+      color: var(--theme-deafult);
+
+      margin-top: -15px;
+    }
+    h3 {
+      font-size: 60px;
+      color: $font-color;
+
+      font-weight: 700;
+    }
+    h4 {
+      font-size: 24px;
+      color: $grey;
+      font-weight: 600;
+
+      letter-spacing: 0.5em;
+      padding-top: 10px;
+      margin-bottom: -5px;
+      line-height: 1.3;
+    }
+  }
+}
+
+.parallax-cls {
+  section {
+    &:nth-child(odd) {
+      .full-banner {
+        background-position: right;
+      }
+    }
+    &:nth-child(even) {
+      .full-banner {
+        background-position: left;
+      }
+    }
+    .banner-contain {
+      margin-top: -12px;
+    }
+  }
+}

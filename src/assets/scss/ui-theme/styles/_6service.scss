@@ -1,0 +1,84 @@
+
+
+/*=====================
+    06.Service CSS start
+    ==========================*/
+
+.service-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .media {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    align-items: center;
+  }
+  svg {
+    margin-right: 12px;
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease;
+    path {
+      fill: var(--theme-deafult);
+    }
+  }
+  img {
+    margin-right: 12px;
+  }
+  h4 {
+    font-weight: 700;
+
+    letter-spacing: 0.03em;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  +.service-block {
+    border-left: 1px solid lighten($black, 86.5%);
+  }
+  &:hover {
+    svg {
+      animation: pulse 1000ms ease-in-out;
+      transition: all 0.3s ease;
+    }
+    h4 {
+      color: var(--theme-deafult);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.service-block1 {
+  text-align: center;
+  svg {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    path {
+      fill: var(--theme-deafult);
+    }
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-weight: 700;
+
+    margin-bottom: 15px;
+  }
+  p {
+    letter-spacing: 0.03em;
+    margin-bottom: -3px;
+    line-height: 1.5;
+  }
+  &:hover {
+    svg {
+      animation: pulse 1000ms ease-in-out;
+      transition: all 0.3s ease;
+    }
+    h4 {
+      color: var(--theme-deafult);
+      transition: all 0.3s ease;
+    }
+  }
+}

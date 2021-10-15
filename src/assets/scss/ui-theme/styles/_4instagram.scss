@@ -1,0 +1,42 @@
+
+/*=====================
+    04.Instagram CSS start
+    ==========================*/
+
+.slick-instagram {
+  margin-bottom: -5px;
+}
+
+.instagram-box {
+  position: relative;
+  background-color: var(--theme-deafult);
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-deafult);
+    top: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(3) rotate(90deg);
+    i {
+      font-size: 60px;
+      color: $white;
+    }
+  }
+  &:hover {
+    .overlay {
+      opacity: 0.5;
+      transition: .5s ease;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+}

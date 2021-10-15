@@ -1,0 +1,229 @@
+
+/*=====================
+    Left Sidebar CSS start
+==========================*/
+
+.left-header {
+  .top-header {
+    padding-left: 300px;
+    background-color: $white;
+    .header-dropdown {
+      .mobile-wishlist,
+      .mobile-account {
+        img {
+          display: block;
+        }
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+  .onhover-div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    >div {
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+    .show-div {
+      top: 56px;
+    }
+  }
+  .sidenav {
+    left: 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+    .sidebar-back {
+      display: none;
+    }
+    nav {
+      background-color: $white;
+    }
+    .pixelstrap {
+      >li {
+        >a {
+          padding: 10px 0 20px 0;
+          &:hover,
+          &:focus {
+            padding: 10px 0 20px 0;
+            background-color: $white;
+          }
+        }
+        .lable-nav {
+          top: -12px;
+          background-color: $white-dark;
+          &:before {
+            border-top: 5px solid $red;
+          }
+          &.grey-lable {
+            background-color: #4d6171;
+            &:before {
+              border-top: 5px solid #4d6171;
+            }
+          }
+        }
+      }
+    }
+    .left-sidebar_search {
+      width: 100%;
+      background-color: $white;
+      input {
+        height: 55px;
+        width: 95%;
+        border: none;
+        padding-left: 15px;
+        background-color: transparent;
+      }
+      .btn-search {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .left-sidebar_center {
+      padding: 40px 0 30px 30px;
+      background-color: $white;
+    }
+    .bottom-section {
+      padding: 70px 25px;
+      .icon_settings {
+        li {
+          display: inline-block;
+        }
+        .shopping-cart {
+          position: relative;
+          .shopping-count {
+            width: 18px;
+            height: 18px;
+            background-color: $red;
+            color: white;
+            position: absolute;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: -7px;
+            right: 7px;
+          }
+        }
+      }
+      ul {
+        li {
+          display: inline-block;
+          padding: 8px 15px 8px 0;
+          a {
+            font-size: 16px;
+            color: $dark-font;
+            i {
+              font-size: 18px;
+              padding-right: 5px;
+              color: $dark-font;
+            }
+          }
+        }
+      }
+      .leftside_setting {
+        .language,
+        .currency {
+          display: flex;
+          h5 {
+            margin-bottom: 0;
+            color: #999;
+            margin-top: 0;
+          }
+          select {
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            color: $dark-font;
+          }
+        }
+        h5 {
+          margin-top: 10px;
+        }
+      }
+    }
+    .leftside_social {
+      position: relative;
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px dashed $round-border;
+      .footer-social {
+        margin-top: 0;
+        i {
+          font-size: 18px;
+        }
+        li {
+          padding: 10px;
+        }
+      }
+      .call_us {
+        h5 {
+          text-align: center;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .main-menu {
+    justify-content: flex-end;
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px dashed $round-border;
+    }
+    .menu-right {
+      .header-dropdown {
+        >li {
+          img {
+            width: 20px;
+            height: auto;
+          }
+        }
+      }
+      .icon-nav {
+        .onhover-div {
+          >img {
+            width: 20px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .menu-left {
+      .navbar {
+        display: none;
+      }
+      .mobile-logo {
+        display: none;
+      }
+    }
+  }
+  .search-overlay {
+    padding-left: 300px;
+  }
+}
+
+.left-sidebar_space {
+  padding-left: 300px;
+}
+
+// Left sidebar scroll
+.sidenav nav {
+  overflow-y: auto;
+}
+
+.sidebar-unset {
+  overflow-y: unset !important;
+}
+
